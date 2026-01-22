@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+  File: index.html
+  Project: Ulta Beauty Gratis & Purchase Tracker
+  Purpose: Landing page where users enter their username to access the tracker.
+  Author: Zane Mehmeti
+  Notes: Submits username via GET to tracker.html.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ulta Tracker</title>
+  
+  <!-- jQuery library -->
+  <script srcr="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Ulta Beauty Gratis & Purchase Tracker</h1>
+
+<!-- Simple form to enter username and navigate to tracker page -->
+<form action="tracker.html" method="GET">
+  <label for="username">Enter your username:</label>
+  <input type="text" id="username" name="username" required>
+  <input type="submit" value="Enter Tracker">
+</form>
+
+</body>
+</html>  

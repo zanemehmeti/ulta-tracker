@@ -1,0 +1,59 @@
+/*
+  File: style.css
+  Project: Ulta Beauty Gratis & Purchase Tracker
+  Purpose: Styles for landing page and tracker page including form and item cards
+  Author: Zane Mehmeti
+  Notes: Provides basic responsive styling, centered headings, and button styling
+*/
+
+/* General font and background for the body */
+body {
+	font-family: Arial, sans-serif;
+	background: #f6f6f6;
+}
+
+/* Center headings */
+h1, h2, h3 {
+	text-align: center;
+}
+
+/* Style for forms */
+form {
+	max-width: 500px;   /* Limit width */
+	margin: 20px auto;  /* Center horizontally with vertical spacing */
+	background: white;  /* White background */
+	padding: 20px;
+	border-radius: 8px; /* Rounded corners */
+}
+
+/* Style for input, select, and buttons */
+input, select, button{
+	width: 100%;        /* Full width */
+	padding: 8px;
+	margin: 8px 0;
+}
+
+/* Style specifically for buttons */
+button {
+	background: #e91e63; /* Pink background */
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* Style for individual item cards */
+.item {
+	max-width: 500px;
+	margin: 10px auto;
+	background: white;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+/* Style buttons inside item cards */
+.item button {
+	width: auto;       /* Adjust to content */
+	margin-right: 5px;
+	background: #555; /* Dark gray */
+}

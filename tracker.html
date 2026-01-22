@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+  File: tracker.html
+  Project: Ulta Beauty Gratis & Purchase Tracker
+  Purpose: Main tracker page for adding, editing, and deleting user items.
+  Author: Zane Mehmeti
+  Notes: Fetches username from query parameters, interacts with localStorage via tracker.js
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ulta Tracker</title>
+   <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  
+  <!-- Link to custom tracker script -->
+  <script src="tracker.js"></script>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Display username dynamically -->
+<h2 id="welcome"></h2>
+
+<!-- Form to add new item -->
+<form id="itemForm">
+  <input type="text" id="itemName" placeholder="Product name">
+  
+   <!-- Dropdown for product category -->
+  <select id="category">
+    <option>Makeup</option>
+    <option>Skincare</option>
+    <option>Haircare</option>
+    <option>Fragrance</option>
+  </select>
+  
+  <!-- Dropdown for type (Gratis or Purchase) -->
+  <select id="type">
+    <option>Gratis</option>
+    <option>Purchase</option>
+  </select>
+  
+  <!-- Button to add or update item -->
+  <button type="button" id="addItemBtn">Add Item</button>
+</form>
+
+<h3>Your Items</h3>
+<!-- Container for displaying items -->
+<div id="items"></div>
+
+</body>
+</html>
